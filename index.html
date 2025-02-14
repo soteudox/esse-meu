@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Brawl Stars</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Fundo da página */
+        body {
+            background-image: url('fundo2.jfif'); /* Caminho para a imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff; /* Cor de texto branca para maior contraste */
+        }
+
+        /* Estilos da Navbar */
+        .navbar {
+            background-color: rgba(34, 34, 34, 0.9); /* Cor de fundo escura com transparência */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+            margin: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito de transição ao passar o mouse sobre a navbar */
+        .navbar:hover {
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        .navbar .title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 30px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ffe1a8; /* Cor de destaque */
+            transform: scale(1.1); /* Efeito de aumento de tamanho */
+        }
+
+        .navbar img {
+            height: 60px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar img:hover {
+            transform: scale(1.1); /* Aumenta a logo ao passar o mouse */
+        }
+
+        /* Estilo das notícias */
+        .news {
+            background-color: rgba(248, 248, 248, 0.8); /* Fundo com opacidade */
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .news:hover {
+            background-color: #e0e0e0;
+            box-shadow: 4px 6px 25px rgba(0, 0, 0, 0.3);
+            transform: scale(1.03); /* Aumenta o tamanho ao passar o mouse */
+        }
+
+        .news a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .news h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .news p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Ajuste para os links */
+        .news a:hover {
+            color: #0066cc; /* Cor de destaque para os links */
+        }
+
+        /* Seção de notícias */
+        .news-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar a {
+                margin: 10px 0;
+            }
+
+            .news {
+                margin: 10px 0;
+            }
+
+            .news a {
+                font-size: 16px;
+            }
+
+            .navbar img {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <span class="title">Brawl Stars News</span>
+        <img src="logo do juan.jfif" alt="Logo do Brawl Stars">
+        <a href="noticias.html">Ver Outras Notícias</a>
+    </div>
+    <div id="noticias" class="news-section">
+        <div class="news">
+            <a href="https://www.brawlstars.com/novo-evento" target="_blank">
+                <h3>Evento Especial no Brawl Stars!</h3>
+                <p>Participe de um evento épico com prêmios exclusivos para os jogadores mais habilidosos!</p>
+            </a>
+        </div>
+        <div class="news">
+            <a href="https://www.brawlstars.com/desafios" target="_blank">
+                <h3>Novos Desafios Semanais</h3>
+                <p>Enfrente desafios difíceis para ganhar recompensas incríveis nesta semana!</p>
+            </a>
+        </div>
+        <div class="news">
+            <a href="https://www.brawlstars.com/brawler-equilibrado" target="_blank">
+                <h3>Rebalanceamento de Brawler</h3>
+                <p>Alguns brawlers receberam mudanças significativas para melhorar a experiência de jogo!</p>
+            </a>
+        </div>
+        <div class="news">
+            <a href="https://www.brawlstars.com/super-brawl" target="_blank">
+                <h3>Super Brawl: Nova Modo Temporário</h3>
+                <p>Teste suas habilidades no novo modo de jogo com batalhas super intensas!</p>
+            </a>
+        </div>
+        <div class="news">
+            <a href="https://www.brawlstars.com/grandes-premios" target="_blank">
+                <h3>Grandes Prêmios no Torneio de Brawl Stars</h3>
+                <p>Não perca a chance de ganhar prêmios exclusivos no torneio mundial de Brawl Stars!</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
